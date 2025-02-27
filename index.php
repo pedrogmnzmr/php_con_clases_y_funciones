@@ -18,13 +18,13 @@ $movies = getMovies();
     <div class="row justify-content-center">
       <?php if (!empty($movies)): ?>
         <?php foreach ($movies as $movie): ?>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-3 mb-4">
             <div class="card h-100 shadow-sm">
               <img 
                 src="<?= $movie->poster_url ?>" 
                 class="card-img-top" 
                 alt="Poster de <?= $movie->title ?>" 
-                style="max-height:300px; object-fit:cover;">
+                style="max-height:450px; object-fit:cover;">
               <div class="card-body">
                 <h5 class="card-title"><?= $movie->title ?></h5>
                 <!-- mostramos mensajes desde la funcion -->
